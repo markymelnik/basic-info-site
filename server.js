@@ -9,7 +9,7 @@ const server = http.createServer(async (req, res) => {
       filePath = './index.html';
     } else if (req.url == '/about') {
       filePath = './about.html';
-    } else if (req.url == '/contact-me') {
+    } else if (req.url == '/contact') {
       filePath = './contact.html';
     } else {
       filePath = './404.html';
@@ -27,4 +27,5 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(8080);
 
-// open http://localhost:8080;
+// node server.js
+// open http://localhost:8080
